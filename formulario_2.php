@@ -3,20 +3,18 @@ $servername = "127.0.0.1";
 $username = "root";
 $password = "";
 $dbname = "integrador";
-
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
   die("Error en la conexión: " . $conn->connect_error);
 }
-//agarra los datos
-
+//Agarra los datos que se pusieron en el formulario
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
-$comentarios = $_POST['comentarios'];
-
-//guarda los datos
-$sql = "INSERT INTO datos_formulario_1 (nombre, apellido, comentarios) VALUES ('$nombre', '$apellido', '$comentarios')"; //aca guarda dentro de mi tabla que esta en la base de datos
+$mail = $_POST['mail'];
+$quantity = $_POST['quantity'];
+//Guarda los datos ingresados
+$sql = "INSERT INTO datos_formulario_2 (nombre, apellido, mail, quantity) VALUES ('$nombre', '$apellido', '$mail', '$quantity')"; 
 if ($conn->query($sql) === TRUE) {
   echo "Gracias por participar  ". $nombre; //mensaje de agradecimiento
 } else {

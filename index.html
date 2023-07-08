@@ -121,10 +121,11 @@
   <!------------Footer------------>
   <footer> <!--Todos los datos que se ingresan se tienen que guardar en una base de datos-->
     <br>
-    <form class="form" action="formulario_1.php" method="POST" id="formulario"> <!--PONER MAIL EN JAVA MYSQL Y HTML-->
+    <form class="form" action="formulario_1.php" method="POST" id="formulario"> 
       <h4><p class="heading">Recibir informacion</p></h4>
       <input class="input" placeholder="Nombre" type="varchar" id="nombre" name="nombre" required>
       <input class="input" placeholder="Apellido" type="varchar" id="apellido" name="apellido" required>
+      <input class="input" placeholder="Email" type="email" id="mail" name="mail" required>
       <textarea class="input" placeholder="Comentarios" type="varchar" id="comentarios" name="comentarios" required></textarea>
       <button class="btn" type="submit">Enviar</button>
     </form>
@@ -156,15 +157,16 @@
     </div>
     <div>
       <br>
-      <form class="form" action="formulario_2.php" onsubmit="event.preventDefault();" method="post" id="comprar"> <!--Formulario de compra-->
+      <form class="form" action="formulario_2.php" method="post" id="comprar"> <!--Formulario de compra-->
         <h4><p class="heading">Comprar tickets 200$</p></h4>
         <input class="input" placeholder="Nombre" type="varchar" id="nombre" name="nombre" required>
         <input class="input" placeholder="Apellido" type="varchar" id="apellido" name="apellido" required>
-        <input class="input" placeholder="Email" type="email" id="email" name="email" required>
-        <input class="input" placeholder="Cantidad" type="number" id="quantity" name="apellido" required>
-        <button class="btn" type="submit">Enviar</button>
-        <br>
-        <p>Promoción</p> <!--Para la promo Javascript-->
+        <input class="input" placeholder="Email" type="email" id="mail" name="mail" required>
+        <input class="input" placeholder="Cantidad" type="number" id="quantity" name="quantity" required>
+        <button class="btn" type="submit">Guardar informacion</button>
+        <br> 
+        <div onsubmit="event.preventDefault();">
+          <p>Promoción</p> <!--Para la promo Javascript-->
           <select class="input" name="promotion" id="promotion" class="vista_form">
             <option value="none">-</option>
             <option class="input" value="student">Primera vez</option>
@@ -175,9 +177,10 @@
             <p>Total a pagar: <span id="price">$0</span></p>
           </div>
           <div class="form_botones">
-            <button class="btn" id="reset">Restablecer</button>
-            <button class="btn" id="resume">Total a pagar</button>
+            <button class="btn" type="reset" id="reset">Restablecer</button>
+            <button class="btn" type="reset" id="resume">Total a pagar</button>
           </div>
+        </div>
       </form>
   </footer>
   <script src="script.js"></script>
