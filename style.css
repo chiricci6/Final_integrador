@@ -1,4 +1,4 @@
-@media screen and (min-width: 925px) { /*Para pantallas grandes*/
+@media screen and (min-width: 600px) { /*Para pantallas grandes*/
     body{
         text-align: center;
         margin-left: 50px;
@@ -233,7 +233,7 @@
     }
       
 }
-@media screen and (max-width: 925px) { /*Para pantallas chiquitas*/
+@media screen and (max-width: 599px) { /*Para pantallas chiquitas*/
     body{
         text-align: center;
         margin-left: 5px;
@@ -296,11 +296,11 @@
     }
     .contenedor_total{
         height: 20px;
-        background: #b3e0f6;
+        background: #ffffff;
         margin-top: 5px;
         border-radius: 5px;
         display: flex;
-        font-size: 8px;
+        font-size: 15px;
         align-items: center;
         padding: 0 20px;
         margin: 10px 0; 
