@@ -253,18 +253,17 @@
     .alinear{
         display: inline-flex;
         justify-content: space-between;
-        width: 100%;
     }
     .cajitas{
-        margin: auto;
+        margin: 5px;
         text-align: center;
     }
     .caja_contenedora{
         display: inline-block;
     }
     .minicaja{
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         background-color: white;
         margin: 3px;
         font-size: 15px;
@@ -296,10 +295,12 @@
         appearance: auto;
     }
     .contenedor_total{
-        height: 50px;
+        height: 20px;
         background: #b3e0f6;
+        margin-top: 5px;
         border-radius: 5px;
         display: flex;
+        font-size: 8px;
         align-items: center;
         padding: 0 20px;
         margin: 10px 0; 
@@ -338,16 +339,17 @@
     }
       
     .input {
-        border-radius: 5px;
+        border-radius: 2px;
         border: 1px solid whitesmoke;
         background-color: whitesmoke;
         outline: none;
-        padding: 0.7em;
+        padding: 5px;
         transition: .4s ease-in-out;
+        font-size: 15px;
     }
       
     .input:hover {
-        box-shadow: 6px 6px 0px #969696,
+        box-shadow: 2px 2px 0px #969696,
                    -3px -3px 10px #ffffff;
     }
       
@@ -357,7 +359,8 @@
     }
       
     .form .btn {
-        margin-top: 2em;
+        font-size: 10px;
+        margin-top: 2px;
         align-self: center;
         padding: 2px;
         padding-left: 1em;
@@ -370,7 +373,7 @@
     }
       
     .form .btn:hover {
-        box-shadow: 6px 6px 0px #969696,
+        box-shadow: 3px 3px 0px #969696,
                    -3px -3px 10px #ffffff;
         transform: translateX(-0.5em) translateY(-0.5em);
     }
