@@ -1,0 +1,185 @@
+<!doctype HTML>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vinos BA AS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><!--Bootstrap-->
+  <link rel="stylesheet" href="style.css"> <!--Css-->
+</head>
+<body background="Imagenes/fondo_1.png"> <!--Aca pongo la imagen de todo el body-->
+  <header>
+  </header>
+  <!------------barra de navegacion------------>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Vinos Bs AS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#vinos">Tipos de vino</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#formulario">Recibir informacion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#comprar">Catar Vinos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+  <!------------Main------------>
+  <main id="inicio">
+    <!--Va una foto de vinos con una descripcion que te den ganas de probar vino-->
+    <img src="Imagenes/Imagen_2.png" alt="vinos" width="60%"> <!--Imagen-->
+    <h2>Vinos Buenos Aires</h2>
+    <p>Bienvenidos a nuestra página de cata de vinos, donde te invitamos a sumergirte en el fascinante mundo de los sabores, aromas y experiencias únicas que ofrece el vino. Aquí encontrarás todo lo que necesitas para explorar y disfrutar de esta apasionante bebida.</p>
+    <div class="buttons-container">
+      <button class="btn" type="submit"><a href="#formularios">Quiero recibir informacion</a></button>
+      
+      <button type="button" class="btn btn-outline-dark"><a href="#Tickets">Comprar Tickets</a></button> <!--Llevar a comprar-->
+    </div>
+  </main>
+  <br><br><br>
+  <!--Nueva secccion-->
+  <section id="vinos">
+    <div class="card-container alinear"> <!--Vino tinto-->
+      <div class="card">
+        <div class="img-content">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-miterlimit="2" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd"><path fill-rule="nonzero" d="m2 19v-14c0-.552.447-1 1-1 .542 0 4.418 2.028 9 2.028 4.593 0 8.456-2.028 9-2.028.55 0 1 .447 1 1v14c0 .553-.45 1-1 1-.544 0-4.407-2.028-9-2.028-4.582 0-8.458 2.028-9 2.028-.553 0-1-.448-1-1zm1.5-.791 6.449-7.691c.289-.344.879-.338 1.16.012 0 0 1.954 2.434 1.954 2.434l1.704-1.283c.319-.24.816-.168 1.054.154l4.679 6.335v-12.44c-1.58.58-4.819 1.798-8.5 1.798-3.672 0-6.918-1.218-8.5-1.799zm2.657-.834c1.623-.471 3.657-.903 5.843-.903 2.309 0 4.444.479 6.105.98l-3.041-4.117-1.065.802.275.344c.259.323.206.796-.117 1.054-.323.259-.795.207-1.054-.117l-2.591-3.236zm.698-9.534c-1.051 0-1.905.854-1.905 1.905s.854 1.904 1.905 1.904 1.904-.853 1.904-1.904-.853-1.905-1.904-1.905zm0 1.3c.333 0 .604.271.604.605 0 .333-.271.604-.604.604-.334 0-.605-.271-.605-.604 0-.334.271-.605.605-.605z"></path></svg>
+          <img src="Imagenes/tinto.jpg" class="card-img-top" alt="vino tinto" >
+        </div>
+        <div class="content">
+          <p class="heading">Vino Tinto</p>
+          <p>
+            El vino tinto se elabora principalmente a partir de uvas tintas. Durante la fermentación alcohólica, se utiliza el mosto y hollejo de las uvas, lo que le da al vino tinto su color oscuro característico. El color puede variar según el tiempo de maceración.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card-container alinear"> <!--Vino blanco-->
+      <div class="card">
+        <div class="img-content">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-miterlimit="2" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd"><path fill-rule="nonzero" d="m2 19v-14c0-.552.447-1 1-1 .542 0 4.418 2.028 9 2.028 4.593 0 8.456-2.028 9-2.028.55 0 1 .447 1 1v14c0 .553-.45 1-1 1-.544 0-4.407-2.028-9-2.028-4.582 0-8.458 2.028-9 2.028-.553 0-1-.448-1-1zm1.5-.791 6.449-7.691c.289-.344.879-.338 1.16.012 0 0 1.954 2.434 1.954 2.434l1.704-1.283c.319-.24.816-.168 1.054.154l4.679 6.335v-12.44c-1.58.58-4.819 1.798-8.5 1.798-3.672 0-6.918-1.218-8.5-1.799zm2.657-.834c1.623-.471 3.657-.903 5.843-.903 2.309 0 4.444.479 6.105.98l-3.041-4.117-1.065.802.275.344c.259.323.206.796-.117 1.054-.323.259-.795.207-1.054-.117l-2.591-3.236zm.698-9.534c-1.051 0-1.905.854-1.905 1.905s.854 1.904 1.905 1.904 1.904-.853 1.904-1.904-.853-1.905-1.904-1.905zm0 1.3c.333 0 .604.271.604.605 0 .333-.271.604-.604.604-.334 0-.605-.271-.605-.604 0-.334.271-.605.605-.605z"></path></svg>
+          <img src="Imagenes/blanco.jpg" class="card-img-top" alt="vino blanco">
+        </div>
+        <div class="content">
+          <p class="heading">Vino Blanco</p>
+          <p>
+            El vino blanco se elabora a partir de mosto de uvas blancas y/o tintas, siempre y cuando las uvas tintas no tengan pulpa coloreada y no se sometan a maceración con sus hollejos. En la producción de vino blanco, las uvas se prensan y se extrae únicamente el mosto, sin las pieles, lo que resulta en su característico tono amarillo transparente.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card-container alinear"> <!--Vino generoso-->
+      <div class="card">
+        <div class="img-content">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-miterlimit="2" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd"><path fill-rule="nonzero" d="m2 19v-14c0-.552.447-1 1-1 .542 0 4.418 2.028 9 2.028 4.593 0 8.456-2.028 9-2.028.55 0 1 .447 1 1v14c0 .553-.45 1-1 1-.544 0-4.407-2.028-9-2.028-4.582 0-8.458 2.028-9 2.028-.553 0-1-.448-1-1zm1.5-.791 6.449-7.691c.289-.344.879-.338 1.16.012 0 0 1.954 2.434 1.954 2.434l1.704-1.283c.319-.24.816-.168 1.054.154l4.679 6.335v-12.44c-1.58.58-4.819 1.798-8.5 1.798-3.672 0-6.918-1.218-8.5-1.799zm2.657-.834c1.623-.471 3.657-.903 5.843-.903 2.309 0 4.444.479 6.105.98l-3.041-4.117-1.065.802.275.344c.259.323.206.796-.117 1.054-.323.259-.795.207-1.054-.117l-2.591-3.236zm.698-9.534c-1.051 0-1.905.854-1.905 1.905s.854 1.904 1.905 1.904 1.904-.853 1.904-1.904-.853-1.905-1.904-1.905zm0 1.3c.333 0 .604.271.604.605 0 .333-.271.604-.604.604-.334 0-.605-.271-.605-.604 0-.334.271-.605.605-.605z"></path></svg>
+          <img src="Imagenes/generoso.jpg" class="card-img-top" alt="vino generoso">
+        </div>
+        <div class="content">
+          <p class="heading">Vino Generoso</p>
+          <p>
+            El vino generoso es un tipo de vino con mayor contenido de alcohol, obtenido al detener la fermentación con la adición de alcohol vínico. Presenta una variedad de estilos y sabores intensos, como los vinos fortificados, y puede ser dulce o seco. Son conocidos por su complejidad y capacidad de envejecimiento.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card-container alinear"> <!--Vino espumoso-->
+      <div class="card">
+        <div class="img-content">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-miterlimit="2" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd"><path fill-rule="nonzero" d="m2 19v-14c0-.552.447-1 1-1 .542 0 4.418 2.028 9 2.028 4.593 0 8.456-2.028 9-2.028.55 0 1 .447 1 1v14c0 .553-.45 1-1 1-.544 0-4.407-2.028-9-2.028-4.582 0-8.458 2.028-9 2.028-.553 0-1-.448-1-1zm1.5-.791 6.449-7.691c.289-.344.879-.338 1.16.012 0 0 1.954 2.434 1.954 2.434l1.704-1.283c.319-.24.816-.168 1.054.154l4.679 6.335v-12.44c-1.58.58-4.819 1.798-8.5 1.798-3.672 0-6.918-1.218-8.5-1.799zm2.657-.834c1.623-.471 3.657-.903 5.843-.903 2.309 0 4.444.479 6.105.98l-3.041-4.117-1.065.802.275.344c.259.323.206.796-.117 1.054-.323.259-.795.207-1.054-.117l-2.591-3.236zm.698-9.534c-1.051 0-1.905.854-1.905 1.905s.854 1.904 1.905 1.904 1.904-.853 1.904-1.904-.853-1.905-1.904-1.905zm0 1.3c.333 0 .604.271.604.605 0 .333-.271.604-.604.604-.334 0-.605-.271-.605-.604 0-.334.271-.605.605-.605z"></path></svg>
+          <img src="Imagenes/espumoso.jpg" class="card-img-top" alt="vino espumoso">
+        </div>
+        <div class="content">
+          <p class="heading">Vino Espumoso</p>
+          <p>
+            Los vinos espumosos son aquellos que tienen burbujas y una sensación de efervescencia en la boca. Esta característica se logra a través de un proceso de fermentación adicional en el que se añade levadura y azúcar al vino para producir dióxido de carbono. El gas queda atrapado en la botella o en un tanque cerrado, creando las burbujas en el líquido.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card-container alinear"> <!--Vino Rosado-->
+      <div class="card">
+        <div class="img-content">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-miterlimit="2" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd"><path fill-rule="nonzero" d="m2 19v-14c0-.552.447-1 1-1 .542 0 4.418 2.028 9 2.028 4.593 0 8.456-2.028 9-2.028.55 0 1 .447 1 1v14c0 .553-.45 1-1 1-.544 0-4.407-2.028-9-2.028-4.582 0-8.458 2.028-9 2.028-.553 0-1-.448-1-1zm1.5-.791 6.449-7.691c.289-.344.879-.338 1.16.012 0 0 1.954 2.434 1.954 2.434l1.704-1.283c.319-.24.816-.168 1.054.154l4.679 6.335v-12.44c-1.58.58-4.819 1.798-8.5 1.798-3.672 0-6.918-1.218-8.5-1.799zm2.657-.834c1.623-.471 3.657-.903 5.843-.903 2.309 0 4.444.479 6.105.98l-3.041-4.117-1.065.802.275.344c.259.323.206.796-.117 1.054-.323.259-.795.207-1.054-.117l-2.591-3.236zm.698-9.534c-1.051 0-1.905.854-1.905 1.905s.854 1.904 1.905 1.904 1.904-.853 1.904-1.904-.853-1.905-1.904-1.905zm0 1.3c.333 0 .604.271.604.605 0 .333-.271.604-.604.604-.334 0-.605-.271-.605-.604 0-.334.271-.605.605-.605z"></path></svg>
+          <img src="Imagenes/rosa.jpg" class="card-img-top" alt="vino rosa">
+        </div>
+        <div class="content">
+          <p class="heading">Vino Rosado</p>
+          <p>
+            El vino rosado es un vino que presenta una gama de tonos rosados, desde pálidos hasta más intensos. Se caracteriza por su frescura, ligereza y notas frutales. Se obtiene a través de métodos como el contacto con los hollejos, el sangrado del mosto o la mezcla de uvas tintas y blancas. Es una opción refrescante y versátil, ideal para disfrutar en ocasiones informales y maridar con comidas ligeras.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------Footer------------>
+  <footer> <!--Todos los datos que se ingresan se tienen que guardar en una base de datos-->
+    <br>
+    <form class="form" action="formulario_1.php" method="POST" id="formulario"> <!--PONER MAIL EN JAVA MYSQL Y HTML-->
+      <h4><p class="heading">Recibir informacion</p></h4>
+      <input class="input" placeholder="Nombre" type="varchar" id="nombre" name="nombre" required>
+      <input class="input" placeholder="Apellido" type="varchar" id="apellido" name="apellido" required>
+      <textarea class="input" placeholder="Comentarios" type="varchar" id="comentarios" name="comentarios" required></textarea>
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+    <br><br>
+    <div class="para_comprar"> <!--Aca me tienen q dejar los "links"-->
+      <div class="cajitas">
+        <div class="caja_contenedora">
+          <div class="minicaja estudiante"> <!--Caja estudiante-->
+            <h5>Primera vez</h5>
+            <p>Tienen un descuento</p>
+            <p><strong>80%</strong></p>
+          </div>
+        </div>
+        <div class="caja_contenedora">
+          <div class="minicaja trainee"> <!--Caja trainee-->
+            <h5>Socio</h5>
+            <p>Tienen un descuento</p>
+            <p><strong>50%</strong></p>
+          </div>
+        </div>
+        <div class="caja_contenedora">
+          <div class="minicaja junior"> <!--Caja Junior-->
+            <h5>Juvilado</h5>
+            <p>Tienen un descuento</p>
+            <p><strong>15%</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <br>
+      <form class="form" action="formulario_2.php" onsubmit="event.preventDefault();" method="post" id="comprar"> <!--Formulario de compra-->
+        <h4><p class="heading">Comprar tickets 200$</p></h4>
+        <input class="input" placeholder="Nombre" type="varchar" id="nombre" name="nombre" required>
+        <input class="input" placeholder="Apellido" type="varchar" id="apellido" name="apellido" required>
+        <input class="input" placeholder="Email" type="email" id="email" name="email" required>
+        <input class="input" placeholder="Cantidad" type="number" id="quantity" name="apellido" required>
+        <button class="btn" type="submit">Enviar</button>
+        <br>
+        <p>Promoción</p> <!--Para la promo Javascript-->
+          <select class="input" name="promotion" id="promotion" class="vista_form">
+            <option value="none">-</option>
+            <option class="input" value="student">Primera vez</option>
+            <option class="input" value="trainee">Socio</option>
+            <option class="input" value="junior">Juvilado</option>
+          </select>
+          <div class="contenedor_total">
+            <p>Total a pagar: <span id="price">$0</span></p>
+          </div>
+          <div class="form_botones">
+            <button class="btn" id="reset">Restablecer</button>
+            <button class="btn" id="resume">Total a pagar</button>
+          </div>
+      </form>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

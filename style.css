@@ -1,0 +1,466 @@
+@media screen and (min-width: 925px) { /*Para pantallas grandes*/
+    body{
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    p, h2, a{
+        color: rgb(7, 7, 7);
+    }
+    a{
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    /*Las cajas de los descuentos*/
+    .alinear{
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .mensaje_largo{
+        margin: 20px 0;
+    }
+    .cajitas{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .caja_contenedora{
+        display: inline-block;
+    }
+    .minicaja{
+        width: 250px;
+        height: 200px;
+        background-color: white;
+        margin: 3px;
+        padding: 25px;
+        border: 1.5px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .estudiante{
+        border-color: blue;
+    }
+    .trainee{
+        border-color: purple;
+    }
+    .junior{
+        border-color: darkorange;
+    }
+    .completar_compra{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+    .tamaño{
+        width: 50%;
+    }
+    .vista_form{
+        appearance: auto;
+    }
+    .contenedor_total{
+        height: 50px;
+        background: #b3e0f6;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        margin: 10px 0; 
+    }
+    .form_botones{
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+    }
+    /*Vista de los formularios*/
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+        gap: 10px;
+        background-color: white;
+        padding: 2.5em;
+        border-radius: 25px;
+        transition: .4s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 2px;
+    }
+      
+    .form:hover {
+        transform: translateX(-0.5em) translateY(-0.5em);
+        border: 1px solid #ffffff;
+        box-shadow: 10px 10px 0px #510071;
+    }
+      
+    .heading {
+        color: black;
+        padding-bottom: 2em;
+        text-align: center;
+        font-weight: bold;
+    }
+      
+    .input {
+        border-radius: 5px;
+        border: 1px solid whitesmoke;
+        background-color: whitesmoke;
+        outline: none;
+        padding: 0.7em;
+        transition: .4s ease-in-out;
+    }
+      
+    .input:hover {
+        box-shadow: 6px 6px 0px #969696,
+                   -3px -3px 10px #ffffff;
+    }
+      
+    .input:focus {
+        background: #ffffff;
+        box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    }
+      
+    .form .btn {
+        margin-top: 2em;
+        align-self: center;
+        padding: 0.7em;
+        padding-left: 1em;
+        padding-right: 1em;
+        border-radius: 10px;
+        border: none;
+        color: black;
+        transition: .4s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+    }
+      
+    .form .btn:hover {
+        box-shadow: 6px 6px 0px #969696,
+                   -3px -3px 10px #ffffff;
+        transform: translateX(-0.5em) translateY(-0.5em);
+    }
+      
+    .form .btn:active {
+        transition: .2s;
+        transform: translateX(0em) translateY(0em);
+        box-shadow: none;
+    }
+    /*Las cajas de los vinos*/
+    .card-container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        border-radius: 10px;
+    }
+      
+    .card-container::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(-45deg, #0c0c0c 0%, #000000 100% );
+        transform: translate3d(0, 0, 0) scale(0.95);
+        filter: blur(20px);
+    }
+      
+    .card {
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        overflow: hidden;
+    }
+      
+    .card .img-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(-45deg, #000000 0%, #000000 100% );
+        transition: scale 0.6s, rotate 0.6s, filter 1s;
+    }
+      
+    .card .img-content svg {
+        width: 50px;
+        height: 50px;
+        fill: #e8e8e8;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+      
+    .card .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: inline;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        color: #e8e8e8;
+        padding: 20px;
+        line-height: 1.5;
+        border-radius: 5px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(50px);
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+      
+    .card .content .heading {
+        font-size: 32px;
+        font-weight: 700;
+    }
+      
+    .card:hover .content {
+        opacity: 1;
+        transform: translateY(0);
+    }
+      
+    .card:hover .img-content {
+        scale: 2.5;
+        rotate: 30deg;
+        filter: blur(7px);
+    }
+      
+    .card:hover .img-content svg {
+        fill: transparent;
+    }
+      
+}
+@media screen and (max-width: 925px) { /*Para pantallas chiquitas*/
+    body{
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    p, h2, a{
+        color: rgb(7, 7, 7);
+    }
+    a{
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    /*Las cajas de los descuentos*/
+    .alinear{
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .cajitas{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .caja_contenedora{
+        display: inline-block;
+    }
+    .minicaja{
+        width: 250px;
+        height: 200px;
+        background-color: white;
+        margin: 3px;
+        padding: 25px;
+        border: 1.5px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .estudiante{
+        border-color: blue;
+    }
+    .trainee{
+        border-color: purple;
+    }
+    .junior{
+        border-color: darkorange;
+    }
+    .completar_compra{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+    .tamaño{
+        width: 50%;
+    }
+    .vista_form{
+        appearance: auto;
+    }
+    .contenedor_total{
+        height: 50px;
+        background: #b3e0f6;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        margin: 10px 0; 
+    }
+    .form_botones{
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+    }
+    /*Vista de los formularios*/
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+        gap: 10px;
+        background-color: white;
+        padding: 2.5em;
+        border-radius: 25px;
+        transition: .4s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 2px;
+    }
+      
+    .form:hover {
+        transform: translateX(-0.5em) translateY(-0.5em);
+        border: 1px solid #ffffff;
+        box-shadow: 10px 10px 0px #510071;
+    }
+      
+    .heading {
+        color: black;
+        padding-bottom: 2em;
+        text-align: center;
+        font-weight: bold;
+    }
+      
+    .input {
+        border-radius: 5px;
+        border: 1px solid whitesmoke;
+        background-color: whitesmoke;
+        outline: none;
+        padding: 0.7em;
+        transition: .4s ease-in-out;
+    }
+      
+    .input:hover {
+        box-shadow: 6px 6px 0px #969696,
+                   -3px -3px 10px #ffffff;
+    }
+      
+    .input:focus {
+        background: #ffffff;
+        box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    }
+      
+    .form .btn {
+        margin-top: 2em;
+        align-self: center;
+        padding: 0.7em;
+        padding-left: 1em;
+        padding-right: 1em;
+        border-radius: 10px;
+        border: none;
+        color: black;
+        transition: .4s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+    }
+      
+    .form .btn:hover {
+        box-shadow: 6px 6px 0px #969696,
+                   -3px -3px 10px #ffffff;
+        transform: translateX(-0.5em) translateY(-0.5em);
+    }
+      
+    .form .btn:active {
+        transition: .2s;
+        transform: translateX(0em) translateY(0em);
+        box-shadow: none;
+    }
+    /*Las cajas de los vinos*/
+    .card-container {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        border-radius: 10px;
+    }
+      
+    .card-container::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(-45deg, #0c0c0c 0%, #000000 100% );
+        transform: translate3d(0, 0, 0) scale(0.95);
+        filter: blur(20px);
+    }
+      
+    .card {
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        overflow: hidden;
+    }
+      
+    .card .img-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(-45deg, #000000 0%, #000000 100% );
+        transition: scale 0.6s, rotate 0.6s, filter 1s;
+    }
+      
+    .card .img-content svg {
+        width: 2px;
+        height: 2px;
+        fill: #e8e8e8;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+      
+    .card .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: inline;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        padding: 2px;
+        color: #e8e8e8;
+        line-height: 1.5;
+        border-radius: 5px;
+        opacity: 0;
+        font-size: 8px;
+        pointer-events: none;
+        transform: translateY(50px);
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+      
+    .card .content .heading {
+        font-size: 10px;
+    }
+      
+    .card:hover .content {
+        opacity: 1;
+        transform: translateY(0);
+    }
+      
+    .card:hover .img-content {
+        scale: 2.5;
+        rotate: 30deg;
+        filter: blur(7px);
+    }
+      
+    .card:hover .img-content svg {
+        fill: transparent;
+    }
+}
