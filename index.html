@@ -126,9 +126,21 @@
   </section>
   <br><br><br>
   <!------------Footer------------>
-  <footer> <!--Todos los datos que se ingresan se tienen que guardar en una base de datos-->
+  <!-- para que funcione sin necesidad de tenerlo en local
+  <footer> <!--Todos los datos que se ingresan se tienen que guardar en una base de datos
     <br>
     <form class="form" action="formulario_1.php" method="POST" id="formulario"> 
+      <h4><p class="heading">Recibir informacion</p></h4>
+      <input class="input" placeholder="Nombre" type="varchar" id="nombre" name="nombre" required>
+      <input class="input" placeholder="Apellido" type="varchar" id="apellido" name="apellido" required>
+      <input class="input" placeholder="Email" type="email" id="mail" name="mail" required>
+      <textarea class="input" placeholder="Comentarios" type="varchar" id="comentarios" name="comentarios" required></textarea>
+      <button class="btn" type="submit">Enviar</button>
+    </form> -->
+  <footer> <!--Todos los datos que se ingresan se tienen que guardar en una base de datos-->
+    <br>
+    <form action="https://formspree.io/f/myyqrrvz"
+  method="POST"> 
       <h4><p class="heading">Recibir informacion</p></h4>
       <input class="input" placeholder="Nombre" type="varchar" id="nombre" name="nombre" required>
       <input class="input" placeholder="Apellido" type="varchar" id="apellido" name="apellido" required>
